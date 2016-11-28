@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_juego"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgplay"
+    tools:context="com.example.tercerparcial.JuegoActivity">
+
+
+    <ImageView
+        android:id="@+id/pokem2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="20dp" />
+
+    <ImageView
+        android:id="@+id/pokem1"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/namePokem1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:textColor="@android:color/white"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/namePokem2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="20dp"
+        android:layout_toRightOf="@id/pokem2"
+        android:text="asdasdasdasdasda"
+        android:textColor="@android:color/white"
+        android:textSize="20dp" />
+
+
+    <ProgressBar
+        android:id="@+id/progress1"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="150dp"
+        android:layout_height="15dp"
+        android:max="100"
+        android:progress="100" />
+
+    <ProgressBar
+        android:id="@+id/progress2"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="150dp"
+        android:layout_height="15dp"
+        android:layout_alignTop="@id/namePokem2"
+        android:layout_toRightOf="@id/pokem2"
+        android:max="100"
+        android:progress="100" />
+</RelativeLayout>
